@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 int max(int p,int e);
 int main()
 {
     int input1,input2,result;
-    while(scanf("%d %d",&input1,&input2)!=EOF)
+    while(cin>>input1>>input2)
     {
         if(input1<input2)
         {
@@ -13,8 +14,7 @@ int main()
         {
             result=max(input2,input1);
         }
-
-        printf("%d %d %d\n",input1,input2,result);
+        cout<<input1<<" "<<input2<<" "<<result<<endl;
     }
     return 0;
 }
