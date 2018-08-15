@@ -112,15 +112,11 @@ int main()
                 input[i] = '`';
         }
         for(int i=0;i<input.size();i++)
-        {
-            cout<<input[i];
-        }
+            cout<<input[i]; 
         cout<<endl;
 
         for(int i=0;i<input.size();i++)
-        {
             input[i]='\0';
-        }
     }
     return 0;
 }
