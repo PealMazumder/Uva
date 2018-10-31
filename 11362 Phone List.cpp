@@ -25,9 +25,7 @@ bool insert(char* str, int len)
 	{
 		int idx = str[i] - '0';
 		if(curr->endmark==true)
-		{
-			return true;
-		}	
+			return true;	
 		else if(curr->next[idx]==NULL)
 		{
 			curr->next[idx] = new node();
