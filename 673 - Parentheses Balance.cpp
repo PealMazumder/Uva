@@ -1,6 +1,6 @@
 /*
 	http://www.shafaetsplanet.com/planetcoding/?p=2342
-	Above article may help you to understand deque.
+	Above article may help you to understand stack and solution procedure.
 */
 #include<bits/stdc++.h>
 #define nl "\n"
