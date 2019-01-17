@@ -1,6 +1,6 @@
 /*
 	https://sites.google.com/site/programinggconcept/algorithm
-	Above article may help you to understand deque.
+	Above article may help you to understand coin change algorithm.
 */
 #include<bits/stdc++.h>
 #define nl "\n"
