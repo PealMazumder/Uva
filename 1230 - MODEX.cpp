@@ -1,6 +1,6 @@
 /*
 	http://shoshikkha.com/archives/29
-	Above article may help you to understand modular arithmetic concept.
+	Above article may help you to understand the modular arithmetic concept.
 */
 #include<bits/stdc++.h>
 #define ll long long
