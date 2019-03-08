@@ -1,0 +1,71 @@
+#include<bits/stdc++.h>
+#define all(p) p.begin(),p.end()
+#define mem(p, v) memset(p, v, sizeof(p))
+#define sz(c) (int)c.size()
+#define pb(x) push_back(x)
+#define ll long long
+#define nl "\n"
+using namespace std;
+int main()
+{
+    //ios::sync_with_stdio(false); cin.tie(0); cout.tie(NULL);
+    int n,m,k = 0;
+    while(scanf("%d%d",&n,&m),(n||m))
+    {
+    	
+    	char a[n+2][m+2];
+    	for(int i =0;i<n+2;i++)
+    	{
+    		for(int j =0;j<m+2;j++)
+    		{
+    			a[i][j] = '0';
+			}
+		}
+    	for(int i =1;i<=n;i++)
+    	{
+    		for(int j =1;j<=m;j++)
+    		{
+    			char t;
+    			cin>>t;
+    			a[i][j] = t;
+			}
+		}
+		if(k>0) cout<<nl;
+    
+		printf("Field #%d:\n",++k);
+    
+		int ans = 0;
+		for(int i =1;i<=n;i++)
+    	{
+    		
+    		for(int j =1;j<=m;j++)
+    		{
+    			if(a[i][j]=='*')
+    			{
+    				cout<<a[i][j];
+    				continue;
+				}
+				if(a[i+1][j]=='*')
+					ans++;
+				if(a[i-1][j]=='*')
+					ans++;
+				if(a[i][j+1]=='*')
+					ans++;
+				if(a[i][j-1]=='*')
+					ans++;
+				if(a[i+1][j+1]=='*')
+					ans++;
+				if(a[i+1][j-1]=='*')
+					ans++;
+				if(a[i-1][j+1]=='*')
+					ans++;
+				if(a[i-1][j-1]=='*')
+					ans++;
+				cout<<ans;
+				ans = 0;
+			}
+			cout<<nl;
+		}
+	}
+    return 0;
+}
