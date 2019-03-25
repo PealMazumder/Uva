@@ -21,8 +21,6 @@ int main()
 		for(int j = i*i;j<=1000000;j+=i)
 			p[j] = false;
 	int n;
-	FI
-	FO
 	while(scanf("%d",&n)==1)
 	{
 		if(p[n]==false)
