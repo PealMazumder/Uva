@@ -22,7 +22,7 @@ ll phi(ll n)
 }
 int main()
 {
-    FI FO
+    //FI FO
     ll n;
     while(scanf("%lld",&n),n)
     {
